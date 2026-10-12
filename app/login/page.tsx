@@ -19,7 +19,12 @@ export default function Login() {
     const supabase = createClient()
     const result = mode === 'Sign in'
       ? await supabase.auth.signInWithPassword(values)
-      : await supabase.auth.signUp({ ...values, options: { emailRedirectTo: `${location.origin}/auth/callback` } })
+      : await supabase.auth.signUp({
+          ...values,
+          options: {
+            emailRedirectTo: new URL('/auth/callback', process.env.NEXT_PUBLIC_SITE_URL || window.location.origin).toString(),
+          },
+        })
     setBusy(false)
 
     if (result.error) {

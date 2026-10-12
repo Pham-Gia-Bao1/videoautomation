@@ -10,14 +10,14 @@ Copy-Item .env.example .env.local
 npm run dev
 ```
 
-Open `http://localhost:3000`. Create an account from `/login` after filling the environment variables below.
+Open `http://localhost:3000` locally. In production, use `https://videoautomation-nine.vercel.app`. Create an account from `/login` after filling the environment variables below.
 
 ## Supabase setup
 
 1. Create a Supabase project and copy its Project URL and publishable key into `.env.local` as `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`.
 2. In Supabase SQL Editor, run [`supabase/migrations/202610120001_clipforge.sql`](supabase/migrations/202610120001_clipforge.sql). It creates projects, scenes, render jobs, owner-scoped RLS policies, and a private `video-assets` bucket.
-3. In Supabase Auth settings, enable email/password and set the local redirect URL to `http://localhost:3000/auth/callback` (add the production callback URL when deploying).
-4. Restart Next.js after changing `.env.local`.
+3. In Supabase Dashboard > Authentication > URL Configuration, set **Site URL** to `https://videoautomation-nine.vercel.app` and add `https://videoautomation-nine.vercel.app/auth/callback` to **Redirect URLs**. For local work, also allow `http://localhost:3000/auth/callback`.
+4. Set `NEXT_PUBLIC_SITE_URL=https://videoautomation-nine.vercel.app` in Vercel Project Settings > Environment Variables for production. Locally, use `NEXT_PUBLIC_SITE_URL=http://localhost:3000`. Restart Next.js after changing `.env.local`.
 
 The application uses the publishable key with authenticated user sessions and database RLS. Never put a secret/service-role key in a `NEXT_PUBLIC_*` variable. The server APIs deliberately use the signed-in user's session rather than bypassing RLS with a privileged key. Supabase SSR manages session verification/refresh, so the JWKS URL does not need to be configured separately.
 
