@@ -1,0 +1,168 @@
+
+{
+  "theme": {
+    "algorithm": "default",
+    "token": {
+      "colorPrimary": "#2563EB",
+      "colorInfo": "#2563EB",
+      "colorSuccess": "#16A34A",
+      "colorWarning": "#D97706",
+      "colorError": "#DC2626",
+
+      "colorTextBase": "#1F2937",
+      "colorBgBase": "#FFFFFF",
+      "colorBorder": "#E5E7EB",
+      "colorBorderSecondary": "#F0F2F5",
+
+      "fontFamily": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "fontSize": 14,
+      "fontSizeSM": 12,
+      "fontSizeLG": 16,
+      "fontSizeXL": 20,
+      "lineHeight": 1.5714285714,
+
+      "borderRadius": 8,
+      "borderRadiusSM": 4,
+      "borderRadiusLG": 12,
+      "borderRadiusOuter": 12,
+
+      "controlHeight": 40,
+      "controlHeightSM": 32,
+      "controlHeightLG": 48,
+
+      "boxShadow": "0 2px 8px rgba(15, 23, 42, 0.06)",
+      "boxShadowSecondary": "0 4px 16px rgba(15, 23, 42, 0.08)",
+
+      "wireframe": false,
+      "motion": true
+    },
+    "components": {
+      "Layout": {
+        "bodyBg": "#F5F7FB",
+        "headerBg": "#FFFFFF",
+        "siderBg": "#FFFFFF",
+        "triggerBg": "#F8FAFC",
+        "triggerColor": "#64748B"
+      },
+      "Menu": {
+        "itemBg": "transparent",
+        "itemColor": "#475569",
+        "itemHoverBg": "#F1F5F9",
+        "itemHoverColor": "#1D4ED8",
+        "itemSelectedBg": "#EFF6FF",
+        "itemSelectedColor": "#2563EB",
+        "itemActiveBg": "#DBEAFE",
+        "itemBorderRadius": 8,
+        "itemHeight": 40,
+        "iconSize": 16,
+        "collapsedWidth": 64
+      },
+      "Button": {
+        "borderRadius": 8,
+        "controlHeight": 40,
+        "controlHeightSM": 32,
+        "controlHeightLG": 48,
+        "primaryShadow": "none",
+        "defaultShadow": "none",
+        "dangerShadow": "none",
+        "fontWeight": 500
+      },
+      "Input": {
+        "borderRadius": 8,
+        "activeBorderColor": "#2563EB",
+        "hoverBorderColor": "#93C5FD",
+        "activeShadow": "0 0 0 3px rgba(37, 99, 235, 0.12)",
+        "paddingInline": 12
+      },
+      "Select": {
+        "borderRadius": 8,
+        "optionSelectedBg": "#EFF6FF",
+        "optionActiveBg": "#F1F5F9",
+        "activeBorderColor": "#2563EB",
+        "hoverBorderColor": "#93C5FD"
+      },
+      "DatePicker": {
+        "borderRadius": 8,
+        "activeBorderColor": "#2563EB",
+        "hoverBorderColor": "#93C5FD",
+        "activeShadow": "0 0 0 3px rgba(37, 99, 235, 0.12)"
+      },
+      "Table": {
+        "headerBg": "#F8FAFC",
+        "headerColor": "#475569",
+        "headerSplitColor": "#E5E7EB",
+        "rowHoverBg": "#F8FAFC",
+        "borderColor": "#E5E7EB",
+        "cellPaddingBlock": 14,
+        "cellPaddingInline": 16,
+        "headerBorderRadius": 8
+      },
+      "Card": {
+        "borderRadiusLG": 12,
+        "headerBg": "#FFFFFF",
+        "paddingLG": 24,
+        "boxShadow": "0 1px 3px rgba(15, 23, 42, 0.04)"
+      },
+      "Tabs": {
+        "itemColor": "#64748B",
+        "itemSelectedColor": "#2563EB",
+        "itemHoverColor": "#1D4ED8",
+        "inkBarColor": "#2563EB",
+        "horizontalItemGutter": 24
+      },
+      "Modal": {
+        "borderRadiusLG": 16,
+        "headerBg": "#FFFFFF",
+        "contentBg": "#FFFFFF",
+        "titleColor": "#1F2937"
+      },
+      "Drawer": {
+        "colorBgElevated": "#FFFFFF",
+        "borderRadiusLG": 12
+      },
+      "Tag": {
+        "borderRadiusSM": 6,
+        "defaultBg": "#F1F5F9",
+        "defaultColor": "#475569"
+      },
+      "Pagination": {
+        "itemActiveBg": "#EFF6FF",
+        "itemSize": 32,
+        "itemSizeSM": 24
+      },
+      "Breadcrumb": {
+        "itemColor": "#64748B",
+        "lastItemColor": "#1F2937",
+        "linkColor": "#64748B",
+        "linkHoverColor": "#2563EB"
+      },
+      "Tooltip": {
+        "borderRadius": 6,
+        "colorBgSpotlight": "#1E293B",
+        "colorTextLightSolid": "#FFFFFF"
+      },
+      "Notification": {
+        "borderRadiusLG": 12
+      }
+    }
+  },
+  "custom": {
+    "appName": "Modern Office",
+    "colorPrimaryHover": "#1D4ED8",
+    "colorPrimaryActive": "#1E40AF",
+    "colorPrimaryBg": "#EFF6FF",
+    "colorPageBackground": "#F5F7FB",
+    "colorSurface": "#FFFFFF",
+    "colorSurfaceHover": "#F8FAFC",
+    "colorTextSecondary": "#64748B",
+    "colorTextTertiary": "#94A3B8",
+    "colorDivider": "#E5E7EB",
+    "sidebarWidth": 224,
+    "sidebarCollapsedWidth": 64,
+    "headerHeight": 64,
+    "pageContentMaxWidth": 1600,
+    "pagePadding": 24,
+    "cardRadius": 12,
+    "transitionDuration": "0.2s"
+  }
+}
